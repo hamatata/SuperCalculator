@@ -4,24 +4,30 @@ namespace myFirstCalc
 {
     public class Calculator
     {
+        public int operand1 { get; set; }
+        public int operand2 { get; set; }
+
         public Calculator()
         {
         }
 
-        public int add(int a, int b)
+        // Operations
+
+        public int add()
         {
-            return a + b;
+            return operand1 + operand2;
         }
 
-        public int multiply(int a, int b)
+        public int multiply()
         {
-            return a * b;
+            return operand1 * operand2;
         }
 
-        public int minus(int a, int b)
+        public int minus()
         {
-            return a - b;
+            return operand1 - operand2;
         }
+
     }
 
 }
